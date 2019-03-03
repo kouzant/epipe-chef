@@ -24,6 +24,10 @@ attribute "epipe/default/private_ips",
           :description => "Set ip addresses",
           :type => "array"
 
+attribute "epipe/default/public_ips",
+          :description => "Public ip addresses",
+          :type => "array"
+
 attribute "epipe/user",
           :description => "User to run Epipe server as",
           :type => "string"
