@@ -31,7 +31,7 @@ group node["kagent"]["certs_group"] do
   only_if { conda_helpers.is_upgrade }
 end
 
-include_recipe "java"
+#include_recipe "java"
 
 if node['platform_family'].eql?("rhel") && node['rhel']['epel'].downcase == "true"
   package "epel-release"
